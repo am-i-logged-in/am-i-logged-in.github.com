@@ -19,7 +19,9 @@
             var logged_in = document.cookie.indexOf('logged_in=yes') != -1;
             var yes = '<span style="color: green">You are logged into GitHub</span>';
             var no = '<span>You are not logged into GitHub</span>';
-            window.name = logged_in;
+
+            // expose the session status to the world?
+            // window.name = logged_in;
         </script>
     </head>
     <body>
