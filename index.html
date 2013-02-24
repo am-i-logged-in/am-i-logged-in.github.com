@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Am I logged in?</title>
+        <style type="text/css" media="screen">
+            body {
+                padding: 0;
+                
+                text-align:center;
+                color: gray;
+            }
+            #response {
+                font-size: 5em;
+                margin: 200px 0 30px 0;
+                color: black;
+            }
+        </style>
+        <script type="text/javascript" charset="utf-8">
+            var logged_in = document.cookie.indexOf('logged_in=yes') != -1;
+            var yes = '<span style="color: green">You are logged into GitHub</span>';
+            var no = '<span>You are not logged into GitHub</span>';
+            window.name = logged_in;
+        </script>
+    </head>
+    <body>
+        <div id="response"></div>
+        <div>(go log in/out of GitHub and then refresh this page)</div>
+        <script type="text/javascript" charset="utf-8">
+            document.getElementById('response').innerHTML = logged_in ? yes : no;
+        </script>
+    </body>
+</html>
