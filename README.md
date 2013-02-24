@@ -1,4 +1,4 @@
-am-i-logged-in.github.com
+Am I Logged into GitHub?
 =========================
 
-am i?
+Check for yourself: http://am-i-logged-in.github.com
